@@ -35,6 +35,6 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: 
+      - image: docker pull collabora/code
         name: wopi-pod
         
