@@ -2,13 +2,13 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: withAddonPolicies
+  name: wopi
   region: ap-south-1
 
 nodeGroups:
-  - name: wopi-client
+  - name: wopi
     desiredCapacity: 1
-    maxSize: 10
+    maxSize: 3
     instancesDistribution:
       instanceTypes: [ "t2.small", "t3.small" ]
       onDemandBaseCapacity: 0
@@ -22,6 +22,3 @@ nodeGroups:
       instance-type: spot
     ssh: 
       publicKeyName: new-key
-cloudWatch:
-  clusterLogging:
-    enableTypes: ["api", "audit", "authenticator"]

@@ -37,4 +37,7 @@ spec:
       containers:
       - image: docker.io/collabora/code
         name: wopi-pod
+        env:
+          - name: extra_params
+            value: --o:ssl.enable=false
         
