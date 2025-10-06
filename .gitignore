@@ -8,3 +8,9 @@ node_modules
 .serverless
 **/.webpack
 .webpack
+package-lock.json
+**/package-lock.json
+# package directories
+node_modules
+jspm_packages
+**/jspm_packages
