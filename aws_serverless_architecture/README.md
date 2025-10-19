@@ -66,6 +66,8 @@ npm install @middy/core @middy/http-json-body-parser @middy/http-error-handler @
 ## Check logs
 ```
 sls logs -f createAuction -t
+sls logs -f processAuctions -t
+
 sls logs -f createAuction -t --stage dev
 ```
 
@@ -75,3 +77,6 @@ sls invoke -f processAuctions -l
 sls invoke -f createAuction --logs
 sls invoke -f createAuction --logs --stage dev
 ```
+
+
+npm install @middy/validator
