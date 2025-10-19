@@ -80,3 +80,15 @@ sls invoke -f createAuction --logs --stage dev
 
 
 npm install @middy/validator
+
+
+
+
+
+
+####################
+Notification Service
+
+1. sls create --name notification-service --template-url https://github.com/codingly-io/sls-base
+2. cd notification-service
+3. npm install
